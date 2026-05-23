@@ -1,0 +1,23 @@
+# Auto-detect text files and normalize to LF
+* text=auto eol=lf
+
+*.java    text eol=lf
+*.xml     text eol=lf
+*.yml     text eol=lf
+*.yaml    text eol=lf
+*.properties text eol=lf
+*.sql     text eol=lf
+*.md      text eol=lf
+*.sh      text eol=lf
+mvnw      text eol=lf
+
+# Windows scripts keep CRLF
+*.cmd     text eol=crlf
+*.bat     text eol=crlf
+
+# Binaries
+*.jar     binary
+*.class   binary
+*.png     binary
+*.jpg     binary
+*.gif     binary

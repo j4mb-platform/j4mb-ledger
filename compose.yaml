@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: j4mb_ledger
+      POSTGRES_USER: ${SPRING_DATASOURCE_USERNAME:-j4mb}
+      POSTGRES_PASSWORD: ${SPRING_DATASOURCE_PASSWORD:-j4mb}
+    ports:
+      - "${POSTGRES_PORT:-5433}:5432"
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "${SPRING_DATASOURCE_USERNAME:-j4mb}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5

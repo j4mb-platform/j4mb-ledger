@@ -1,0 +1,12 @@
+spring:
+  docker:
+    compose:
+      enabled: true
+      file: compose.yaml
+  jpa:
+    show-sql: true
+
+logging:
+  level:
+    com.j4mb: DEBUG
+    org.springframework.web: DEBUG

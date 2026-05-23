@@ -1,0 +1,9 @@
+server:
+  error:
+    include-stacktrace: never
+    include-message: never
+
+logging:
+  level:
+    root: WARN
+    com.j4mb: INFO
