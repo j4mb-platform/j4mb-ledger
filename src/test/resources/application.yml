@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5433/j4mb_ledger
     username: j4mb
-    password: j4mb
+    password: j4mb123
   docker:
     compose:
       enabled: false
